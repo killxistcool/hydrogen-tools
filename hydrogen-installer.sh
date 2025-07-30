@@ -38,7 +38,7 @@ case $choice in
                 ;;
             2)
                 echo "Hydrogen is at 94% sUNC."
-                echo "Missing: \replicatesignal\, and \getcallbackvalue\"
+                echo "Missing: replicatesignal, and getcallbackvalue"
                 echo "Test link: https://r.sunc.su/iVvotxiPoV"
                 ;;
             3)
@@ -48,7 +48,7 @@ case $choice in
                 echo "Hydrogen Key Prices:"
                 echo "• 1 Week: \$3 (❌ Sold Out)"
                 echo "• 2 Weeks: \$5.00 (❌ Sold Out)"
-                echo "• 1 Month: \$8.00 (✅ Available)"
+                echo "• 1 Month: \$8.00 (❌ Sold Out)"
                 echo "• 3 Months: \$18.00 (✅ Available)"
                 ;;
             5)
