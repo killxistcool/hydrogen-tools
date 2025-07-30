@@ -328,13 +328,14 @@ while true; do
             color_echo "           Help"
             color_echo "============================"
             echo
-            color_echo "Welcome to Hydrogen Helper by Flawless."
-            color_echo "This tool assists you with managing Hydrogen."
-            color_echo "Navigate the menus by entering the number corresponding to your choice."
-            color_echo "Credits to xgladius for creating Hydrogen."
+            color_echo "Welcome to Hydrogen Helper made by Flawless."
+            color_echo "This unofficial tool simplifies managing Hydrogen on macOS."
+            color_echo "This is an unofficial tool."
+            color_echo "Credits to xgladius for developing Hydrogen."
             echo
             color_echo "For additional assistance, visit:"
             color_echo "https://hydrostuff.github.io/Hydrogen-Knowledgebase/"
+            color_echo "Join the Hydrogen Discord server: https://discord.gg/hydrogen"
             echo
             read -p "Press Enter to return to main menu..."
             ;;
