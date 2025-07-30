@@ -3,21 +3,26 @@
 # Hydrogen Helper made by Flawless
 # Created by Flawless – https://github.com/killxistcool
 
+# Colors
+BLUE='\033[0;36m'   # cyan/light blue
+BOLD='\033[1m'
+RESET='\033[0m'
+
 while true; do
     clear
-    echo "============================"
-    echo "     Hydrogen Helper"
-    echo "       by Flawless"
-    echo "============================"
+    echo -e "${BLUE}============================${RESET}"
+    echo -e "${BLUE}${BOLD}     Hydrogen Helper${RESET}"
+    echo -e "${BLUE}${BOLD}       by Flawless${RESET}"
+    echo -e "${BLUE}============================${RESET}"
     echo
-    echo "What are you looking for?"
+    echo -e "${BOLD}What are you looking for?${RESET}"
     echo
-    echo "1) Hydrogen Information"
-    echo "2) Install Hydrogen"
-    echo "3) Script Options"
-    echo "4) Key Options"
-    echo "5) Troubleshooting"
-    echo "0) Exit"
+    echo -e "${BLUE}1)${RESET} Hydrogen Information"
+    echo -e "${BLUE}2)${RESET} Install Hydrogen"
+    echo -e "${BLUE}3)${RESET} Script Options"
+    echo -e "${BLUE}4)${RESET} Key Options"
+    echo -e "${BLUE}5)${RESET} Troubleshooting"
+    echo -e "${BLUE}0)${RESET} Exit"
     echo
     read -p "Choose an option: " choice
 
@@ -25,16 +30,16 @@ while true; do
         1)
             while true; do
                 clear
-                echo "============================"
-                echo "   Hydrogen Information"
-                echo "============================"
+                echo -e "${BLUE}============================${RESET}"
+                echo -e "${BLUE}${BOLD}   Hydrogen Information${RESET}"
+                echo -e "${BLUE}============================${RESET}"
                 echo
-                echo "1) FAQ"
-                echo "2) sUNC"
-                echo "3) Status"
-                echo "4) Key Prices"
-                echo "5) Key Tutorial"
-                echo "0) Back"
+                echo -e "${BLUE}1)${RESET} FAQ"
+                echo -e "${BLUE}2)${RESET} sUNC"
+                echo -e "${BLUE}3)${RESET} Status"
+                echo -e "${BLUE}4)${RESET} Key Prices"
+                echo -e "${BLUE}5)${RESET} Key Tutorial"
+                echo -e "${BLUE}0)${RESET} Back"
                 echo
                 read -p "Choose an option: " infoChoice
 
@@ -43,21 +48,21 @@ while true; do
                         open "https://hydrostuff.github.io/Hydrogen-Knowledgebase/"
                         ;;
                     2)
-                        echo "Hydrogen is at 94% sUNC."
-                        echo "Missing: replicatesignal, and getcallbackvalue"
+                        echo -e "${BOLD}Hydrogen is at 94% sUNC.${RESET}"
+                        echo -e "Missing: replicatesignal, and getcallbackvalue"
                         echo "Test link: https://r.sunc.su/iVvotxiPoV"
                         read -p "Press Enter to continue..."
                         ;;
                     3)
-                        echo "Hydrogen Status: 🟢 UP"
+                        echo -e "Hydrogen Status: ${BOLD}🟢 UP${RESET}"
                         read -p "Press Enter to continue..."
                         ;;
                     4)
-                        echo "Hydrogen Key Prices:"
-                        echo "• 1 Week: \$3 (❌ Sold Out)"
-                        echo "• 2 Weeks: \$5.00 (❌ Sold Out)"
-                        echo "• 1 Month: \$8.00 (❌ Sold Out)"
-                        echo "• 3 Months: \$18.00 (✅ Available)"
+                        echo -e "Hydrogen Key Prices:"
+                        echo -e "• 1 Week: \$3 (❌ Sold Out)"
+                        echo -e "• 2 Weeks: \$5.00 (❌ Sold Out)"
+                        echo -e "• 1 Month: \$8.00 (❌ Sold Out)"
+                        echo -e "• 3 Months: \$18.00 (✅ Available)"
                         read -p "Press Enter to continue..."
                         ;;
                     5)
@@ -74,27 +79,27 @@ while true; do
             done
             ;;
         2)
-            echo "Installing Hydrogen..."
+            echo -e "${BOLD}Installing Hydrogen...${RESET}"
             bash -c "$(curl -fsSL https://www.hydrogen.lat/install)"
             read -p "Press Enter to continue..."
             ;;
         3)
             while true; do
                 clear
-                echo "============================"
-                echo "     Script Options"
-                echo "============================"
+                echo -e "${BLUE}============================${RESET}"
+                echo -e "${BLUE}${BOLD}     Script Options${RESET}"
+                echo -e "${BLUE}============================${RESET}"
                 echo
-                echo "1) Infinite Yield"
-                echo "2) Hydro Hub"
-                echo "0) Back"
+                echo -e "${BLUE}1)${RESET} Infinite Yield"
+                echo -e "${BLUE}2)${RESET} Hydro Hub"
+                echo -e "${BLUE}0)${RESET} Back"
                 echo
                 read -p "Choose an option: " scriptChoice
 
                 case $scriptChoice in
                     1)
                         clear
-                        echo "Infinite Yield Script:"
+                        echo -e "${BOLD}Infinite Yield Script:${RESET}"
                         echo "----------------------"
                         echo "loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()"
                         echo
@@ -103,7 +108,7 @@ while true; do
                         ;;
                     2)
                         clear
-                        echo "Hydro Hub Script:"
+                        echo -e "${BOLD}Hydro Hub Script:${RESET}"
                         echo "-----------------"
                         echo "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/FRX397/Hydrohub/main/Hydro_hub\", true))()"
                         echo
@@ -123,14 +128,14 @@ while true; do
         4)
             while true; do
                 clear
-                echo "============================"
-                echo "      Key Options"
-                echo "============================"
+                echo -e "${BLUE}============================${RESET}"
+                echo -e "${BLUE}${BOLD}      Key Options${RESET}"
+                echo -e "${BLUE}============================${RESET}"
                 echo
-                echo "1) Get Free Key"
-                echo "2) Remove Key"
-                echo "3) Buy Adless"
-                echo "0) Back"
+                echo -e "${BLUE}1)${RESET} Get Free Key"
+                echo -e "${BLUE}2)${RESET} Remove Key"
+                echo -e "${BLUE}3)${RESET} Buy Adless"
+                echo -e "${BLUE}0)${RESET} Back"
                 echo
                 read -p "Choose an option: " keyChoice
 
@@ -139,7 +144,7 @@ while true; do
                         open "https://hydrogen.lat/unlock"
                         ;;
                     2)
-                        echo "WARNING: Removing your key will not be irreversible."
+                        echo -e "${RED}WARNING:${RESET} Removing your key will not be irreversible."
                         echo "Your key will become unusable unless you get your HWID reset by xgladius."
                         read -p "Are you sure you want to remove your key? (y/n): " confirmRemove
                         if [[ "$confirmRemove" == "y" || "$confirmRemove" == "Y" ]]; then
@@ -165,14 +170,14 @@ while true; do
         5)
             while true; do
                 clear
-                echo "============================"
-                echo "      Troubleshooting"
-                echo "============================"
+                echo -e "${BLUE}============================${RESET}"
+                echo -e "${BLUE}${BOLD}      Troubleshooting${RESET}"
+                echo -e "${BLUE}============================${RESET}"
                 echo
-                echo "1) No HTTP server on ports 6969–7069"
-                echo "2) Permission denied (os error)"
-                echo "3) Error 403"
-                echo "0) Back"
+                echo -e "${BLUE}1)${RESET} No HTTP server on ports 6969–7069"
+                echo -e "${BLUE}2)${RESET} Permission denied (os error)"
+                echo -e "${BLUE}3)${RESET} Error 403"
+                echo -e "${BLUE}0)${RESET} Back"
                 echo
                 read -p "Choose an option: " troubleshootChoice
 
