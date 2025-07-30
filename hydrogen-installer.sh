@@ -20,7 +20,7 @@ read -p "Choose an option: " choice
 case $choice in
     1)
         echo "Installing Hydrogen..."
-        bash <(curl -sSL https://raw.githubusercontent.com/redivancee/HydrogenIssues/refs/heads/main/hydro-helper.command)
+        bash -c "$(curl -fsSL https://www.hydrogen.lat/install)"
         ;;
     2)
         echo "Uninstalling Hydrogen..."
@@ -30,7 +30,7 @@ case $choice in
     3)
         echo "Reinstalling Hydrogen..."
         rm -rf ~/Hydrogen
-        bash <(curl -sSL https://raw.githubusercontent.com/redivancee/HydrogenIssues/refs/heads/main/hydro-helper.command)
+        bash -c "$(curl -fsSL https://www.hydrogen.lat/install)"
         ;;
     0)
         echo "Exiting."
