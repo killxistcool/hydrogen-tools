@@ -1,28 +1,29 @@
 #!/bin/bash
 
 # Hydrogen Helper made by Flawless
-# Created by Flawless – https://github.com/killxistcool
+# Created by Flawless - https://github.com/killxistcool
 
 # Colors
-BLUE='\033[0;36m'   # cyan/light blue
+TITLE_BLUE='\033[1;36m'   # Fettes Cyan für die Titel
+OPTION_BLUE='\033[0;96m'  # Helles Cyan für die Optionen wie z.b. "Hydrogen Information"
 BOLD='\033[1m'
 RESET='\033[0m'
 
 while true; do
     clear
-    echo -e "${BLUE}============================${RESET}"
-    echo -e "${BLUE}${BOLD}     Hydrogen Helper${RESET}"
-    echo -e "${BLUE}${BOLD}       by Flawless${RESET}"
-    echo -e "${BLUE}============================${RESET}"
+    echo -e "${TITLE_BLUE}============================${RESET}"
+    echo -e "${TITLE_BLUE}${BOLD}     Hydrogen Helper${RESET}"
+    echo -e "${TITLE_BLUE}${BOLD}       by Flawless${RESET}"
+    echo -e "${TITLE_BLUE}============================${RESET}"
     echo
     echo -e "${BOLD}What are you looking for?${RESET}"
     echo
-    echo -e "${BLUE}1)${RESET} Hydrogen Information"
-    echo -e "${BLUE}2)${RESET} Install Hydrogen"
-    echo -e "${BLUE}3)${RESET} Script Options"
-    echo -e "${BLUE}4)${RESET} Key Options"
-    echo -e "${BLUE}5)${RESET} Troubleshooting"
-    echo -e "${BLUE}0)${RESET} Exit"
+    echo -e "${OPTION_BLUE}1)${RESET} Hydrogen Information"
+    echo -e "${OPTION_BLUE}2)${RESET} Install Hydrogen"
+    echo -e "${OPTION_BLUE}3)${RESET} Script Options"
+    echo -e "${OPTION_BLUE}4)${RESET} Key Options"
+    echo -e "${OPTION_BLUE}5)${RESET} Troubleshooting"
+    echo -e "${OPTION_BLUE}0)${RESET} Exit"
     echo
     read -p "Choose an option: " choice
 
@@ -30,16 +31,16 @@ while true; do
         1)
             while true; do
                 clear
-                echo -e "${BLUE}============================${RESET}"
-                echo -e "${BLUE}${BOLD}   Hydrogen Information${RESET}"
-                echo -e "${BLUE}============================${RESET}"
+                echo -e "${TITLE_BLUE}============================${RESET}"
+                echo -e "${TITLE_BLUE}${BOLD}   Hydrogen Information${RESET}"
+                echo -e "${TITLE_BLUE}============================${RESET}"
                 echo
-                echo -e "${BLUE}1)${RESET} FAQ"
-                echo -e "${BLUE}2)${RESET} sUNC"
-                echo -e "${BLUE}3)${RESET} Status"
-                echo -e "${BLUE}4)${RESET} Key Prices"
-                echo -e "${BLUE}5)${RESET} Key Tutorial"
-                echo -e "${BLUE}0)${RESET} Back"
+                echo -e "${OPTION_BLUE}1)${RESET} FAQ"
+                echo -e "${OPTION_BLUE}2)${RESET} sUNC"
+                echo -e "${OPTION_BLUE}3)${RESET} Status"
+                echo -e "${OPTION_BLUE}4)${RESET} Key Prices"
+                echo -e "${OPTION_BLUE}5)${RESET} Key Tutorial"
+                echo -e "${OPTION_BLUE}0)${RESET} Back"
                 echo
                 read -p "Choose an option: " infoChoice
 
@@ -86,13 +87,13 @@ while true; do
         3)
             while true; do
                 clear
-                echo -e "${BLUE}============================${RESET}"
-                echo -e "${BLUE}${BOLD}     Script Options${RESET}"
-                echo -e "${BLUE}============================${RESET}"
+                echo -e "${TITLE_BLUE}============================${RESET}"
+                echo -e "${TITLE_BLUE}${BOLD}     Script Options${RESET}"
+                echo -e "${TITLE_BLUE}============================${RESET}"
                 echo
-                echo -e "${BLUE}1)${RESET} Infinite Yield"
-                echo -e "${BLUE}2)${RESET} Hydro Hub"
-                echo -e "${BLUE}0)${RESET} Back"
+                echo -e "${OPTION_BLUE}1)${RESET} Infinite Yield"
+                echo -e "${OPTION_BLUE}2)${RESET} Hydro Hub"
+                echo -e "${OPTION_BLUE}0)${RESET} Back"
                 echo
                 read -p "Choose an option: " scriptChoice
 
@@ -128,14 +129,14 @@ while true; do
         4)
             while true; do
                 clear
-                echo -e "${BLUE}============================${RESET}"
-                echo -e "${BLUE}${BOLD}      Key Options${RESET}"
-                echo -e "${BLUE}============================${RESET}"
+                echo -e "${TITLE_BLUE}============================${RESET}"
+                echo -e "${TITLE_BLUE}${BOLD}      Key Options${RESET}"
+                echo -e "${TITLE_BLUE}============================${RESET}"
                 echo
-                echo -e "${BLUE}1)${RESET} Get Free Key"
-                echo -e "${BLUE}2)${RESET} Remove Key"
-                echo -e "${BLUE}3)${RESET} Buy Adless"
-                echo -e "${BLUE}0)${RESET} Back"
+                echo -e "${OPTION_BLUE}1)${RESET} Get Free Key"
+                echo -e "${OPTION_BLUE}2)${RESET} Remove Key"
+                echo -e "${OPTION_BLUE}3)${RESET} Buy Adless"
+                echo -e "${OPTION_BLUE}0)${RESET} Back"
                 echo
                 read -p "Choose an option: " keyChoice
 
@@ -170,14 +171,14 @@ while true; do
         5)
             while true; do
                 clear
-                echo -e "${BLUE}============================${RESET}"
-                echo -e "${BLUE}${BOLD}      Troubleshooting${RESET}"
-                echo -e "${BLUE}============================${RESET}"
+                echo -e "${TITLE_BLUE}============================${RESET}"
+                echo -e "${TITLE_BLUE}${BOLD}      Troubleshooting${RESET}"
+                echo -e "${TITLE_BLUE}============================${RESET}"
                 echo
-                echo -e "${BLUE}1)${RESET} No HTTP server on ports 6969–7069"
-                echo -e "${BLUE}2)${RESET} Permission denied (os error)"
-                echo -e "${BLUE}3)${RESET} Error 403"
-                echo -e "${BLUE}0)${RESET} Back"
+                echo -e "${OPTION_BLUE}1)${RESET} No HTTP server on ports 6969–7069"
+                echo -e "${OPTION_BLUE}2)${RESET} Permission denied (os error)"
+                echo -e "${OPTION_BLUE}3)${RESET} Error 403"
+                echo -e "${OPTION_BLUE}0)${RESET} Back"
                 echo
                 read -p "Choose an option: " troubleshootChoice
 
