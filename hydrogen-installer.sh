@@ -309,7 +309,7 @@ while true; do
                         ;;
                     7)
                         THEME_COLOR=$COLOR_YELLOW
-                        echo "Theme set to Orange."
+                        echo "Theme set to Yellow."
                         read -p "Press Enter to continue..."
                         ;;
                     0)
