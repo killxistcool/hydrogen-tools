@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Hydrogen Helper made by Flawless
-# Created by Flawless https://github.com/killxistcool
+# Created by Flawless – https://github.com/killxistcool
 
 while true; do
     clear
@@ -45,11 +45,11 @@ while true; do
                         echo "Hydrogen is at 94% sUNC."
                         echo "Missing: replicatesignal, and getcallbackvalue"
                         echo "Test link: https://r.sunc.su/iVvotxiPoV"
-                        read -p "Press Enter to continue"
+                        read -p "Press Enter to continue..."
                         ;;
                     3)
                         echo "Hydrogen Status: 🟢 UP"
-                        read -p "Press Enter to continue"
+                        read -p "Press Enter to continue..."
                         ;;
                     4)
                         echo "Hydrogen Key Prices:"
@@ -57,7 +57,7 @@ while true; do
                         echo "• 2 Weeks: \$5.00 (❌ Sold Out)"
                         echo "• 1 Month: \$8.00 (❌ Sold Out)"
                         echo "• 3 Months: \$18.00 (✅ Available)"
-                        read -p "Press Enter to continue"
+                        read -p "Press Enter to continue..."
                         ;;
                     5)
                         open "https://youtu.be/sq8rHrBykJE"
@@ -67,7 +67,7 @@ while true; do
                         ;;
                     *)
                         echo "Invalid option."
-                        read -p "Press Enter to continue"
+                        read -p "Press Enter to continue..."
                         ;;
                 esac
             done
@@ -75,7 +75,7 @@ while true; do
         2)
             echo "Installing Hydrogen..."
             bash -c "$(curl -fsSL https://www.hydrogen.lat/install)"
-            read -p "Press Enter to continue"
+            read -p "Press Enter to continue..."
             ;;
         3)
             while true; do
@@ -98,7 +98,7 @@ while true; do
                         echo "loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()"
                         echo
                         echo "Copy the above script and paste it into your Hydrogen workspace."
-                        read -p "Press Enter to continue"
+                        read -p "Press Enter to continue..."
                         ;;
                     2)
                         clear
@@ -107,14 +107,14 @@ while true; do
                         echo "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/FRX397/Hydrohub/main/Hydro_hub\", true))()"
                         echo
                         echo "Copy the above script and paste it into your Hydrogen workspace."
-                        read -p "Press Enter to continue"
+                        read -p "Press Enter to continue..."
                         ;;
                     0)
                         break
                         ;;
                     *)
                         echo "Invalid option."
-                        read -p "Press Enter to continue"
+                        read -p "Press Enter to continue..."
                         ;;
                 esac
             done
@@ -138,14 +138,15 @@ while true; do
                         open "https://hydrogen.lat/unlock"
                         ;;
                     2)
-                        echo "WARNING: Removing your key will disable Hydrogen until you add a new key."
+                        echo "WARNING: Removing your key will not be irreversible."
+                        echo "Your key will become unusable unless you get your HWID reset by xgladius."
                         read -p "Are you sure you want to remove your key? (y/n): " confirmRemove
                         if [[ "$confirmRemove" == "y" || "$confirmRemove" == "Y" ]]; then
                             rm ~/Library/Application\ Support/Hydrogen/key.txt && echo "Key removed successfully."
                         else
                             echo "Operation cancelled."
                         fi
-                        read -p "Press Enter to continue"
+                        read -p "Press Enter to continue..."
                         ;;
                     3)
                         open "https://hydrogenmacos.selly.store/"
@@ -155,7 +156,7 @@ while true; do
                         ;;
                     *)
                         echo "Invalid option."
-                        read -p "Press Enter to continue"
+                        read -p "Press Enter to continue..."
                         ;;
                 esac
             done
@@ -166,7 +167,7 @@ while true; do
             ;;
         *)
             echo "Invalid option."
-            read -p "Press Enter to continue"
+            read -p "Press Enter to continue..."
             ;;
     esac
 done
