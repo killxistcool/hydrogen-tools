@@ -20,23 +20,23 @@ read -p "Choose an option: " choice
 case $choice in
     1)
         echo "Installing Hydrogen..."
-        bash -c "$(curl -fsSL https://www.hydrogen.lat/install)"
+        sudo bash -c "$(curl -fsSL https://www.hydrogen.lat/install)"
         ;;
     2)
         echo "Uninstalling Hydrogen..."
-        rm -rf ~/Applications/Hydrogen-M.app
+        sudo rm -rf ~/Applications/Hydrogen-M.app
         echo "Hydrogen has been uninstalled."
         ;;
     3)
         echo "Reinstalling Hydrogen..."
-        rm -rf ~/Hydrogen
-        bash -c "$(curl -fsSL https://www.hydrogen.lat/install)"
+        sudo rm -rf ~/Hydrogen
+        sudo bash -c "$(curl -fsSL https://www.hydrogen.lat/install)"
         ;;
     0)
-        echo "Exiting."
+        echo "Adios"
         exit 0
         ;;
     *)
-        echo "Invalid option."
+        echo "Invalid Option."
         ;;
 esac
