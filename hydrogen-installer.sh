@@ -37,8 +37,8 @@ get_current_key() {
 while true; do
     clear
     echo -e "${THEME_COLOR}============================"
-    echo "      Hydrogen Helper"
-    echo "         by Flawless"
+    echo "     Hydrogen Helper"
+    echo "        by Flawless"
     echo -e "============================${COLOR_RESET}"
     echo
     color_echo "What are you looking for?"
