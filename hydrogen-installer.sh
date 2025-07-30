@@ -16,6 +16,7 @@ while true; do
     echo "2) Install Hydrogen"
     echo "3) Script Options"
     echo "4) Key Options"
+    echo "5) Troubleshooting"
     echo "0) Exit"
     echo
     read -p "Choose an option: " choice
@@ -150,6 +151,59 @@ while true; do
                         ;;
                     3)
                         open "https://hydrogenmacos.selly.store/"
+                        ;;
+                    0)
+                        break
+                        ;;
+                    *)
+                        echo "Invalid option."
+                        read -p "Press Enter to continue..."
+                        ;;
+                esac
+            done
+            ;;
+        5)
+            while true; do
+                clear
+                echo "============================"
+                echo "      Troubleshooting"
+                echo "============================"
+                echo
+                echo "1) No HTTP server on ports 6969–7069"
+                echo "2) Permission denied (os error)"
+                echo "3) Error 403"
+                echo "0) Back"
+                echo
+                read -p "Choose an option: " troubleshootChoice
+
+                case $troubleshootChoice in
+                    1)
+                        echo
+                        echo "This error usually means you haven't entered a key."
+                        echo "To fix this, paste your key inside the key pop-up when you first open Roblox."
+                        echo "If you don't see the pop-up, then you should reinstall Hydrogen."
+                        read -p "Press Enter to continue..."
+                        ;;
+                    2)
+                        echo
+                        echo "To fix this error make sure that you are on an administrator account and that the Terminal app has Full Disk Access."
+                        echo
+                        echo "How to give Terminal Full Disk Access:"
+                        echo "1) Open Settings and go to “Privacy & Security”"
+                        echo "2) Go to “Full Disk Access”"
+                        echo "3) Press the plus icon at the bottom"
+                        echo "4) Add Terminal to the list"
+                        echo
+                        echo "How to check if you are an administrator:"
+                        echo "1) Open Settings and go to “Users & Groups”"
+                        echo "2) Check if your account is listed as an Admin"
+                        read -p "Press Enter to continue..."
+                        ;;
+                    3)
+                        echo
+                        echo "This error occurs during installation because the server refused to process your request."
+                        echo "This could happen due to many reasons, but using a VPN should fix this issue."
+                        read -p "Press Enter to continue..."
                         ;;
                     0)
                         break
