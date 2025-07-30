@@ -6,6 +6,10 @@
 COLOR_CYAN="\033[1;36m"
 COLOR_GREEN="\033[1;32m"
 COLOR_MAGENTA="\033[1;35m"
+COLOR_BLACK="\033[0;30m"
+COLOR_WHITE="\033[1;37m"
+COLOR_RED="\033[1;31m"
+COLOR_ORANGE="\033[0;33m"
 COLOR_RESET="\033[0m"
 
 # Cyan = default color
@@ -265,6 +269,10 @@ while true; do
                 color_echo "1) Cyan"
                 color_echo "2) Green"
                 color_echo "3) Magenta"
+                color_echo "4) Black"
+                color_echo "5) White"
+                color_echo "6) Red"
+                color_echo "7) Orange"
                 color_echo "0) Back"
                 echo
                 read -p "$(echo -e "${THEME_COLOR}Choose an option: ${COLOR_RESET}")" colorChoice
@@ -282,6 +290,26 @@ while true; do
                     3)
                         THEME_COLOR=$COLOR_MAGENTA
                         echo "Theme set to Magenta."
+                        read -p "Press Enter to continue..."
+                        ;;
+                    4)
+                        THEME_COLOR=$COLOR_BLACK
+                        echo "Theme set to Black."
+                        read -p "Press Enter to continue..."
+                        ;;
+                    5)
+                        THEME_COLOR=$COLOR_WHITE
+                        echo "Theme set to White."
+                        read -p "Press Enter to continue..."
+                        ;;
+                    6)
+                        THEME_COLOR=$COLOR_RED
+                        echo "Theme set to Red."
+                        read -p "Press Enter to continue..."
+                        ;;
+                    7)
+                        THEME_COLOR=$COLOR_ORANGE
+                        echo "Theme set to Orange."
                         read -p "Press Enter to continue..."
                         ;;
                     0)
