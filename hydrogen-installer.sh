@@ -14,6 +14,7 @@ while true; do
     echo
     echo "1) Hydrogen Information"
     echo "2) Install Hydrogen"
+    echo "3) Script Options"
     echo "0) Exit"
     echo
     read -p "Choose an option: " choice
@@ -51,10 +52,10 @@ while true; do
                         ;;
                     4)
                         echo "Hydrogen Key Prices:"
-                        echo "• 1 Week: $3 (❌ Sold Out)"
-                        echo "• 2 Weeks: $5.00 (❌ Sold Out)"
-                        echo "• 1 Month: $8.00 (❌ Sold Out)"
-                        echo "• 3 Months: $18.00 (✅ Available)"
+                        echo "• 1 Week: \$3 (❌ Sold Out)"
+                        echo "• 2 Weeks: \$5.00 (❌ Sold Out)"
+                        echo "• 1 Month: \$8.00 (❌ Sold Out)"
+                        echo "• 3 Months: \$18.00 (✅ Available)"
                         read -p "Press Enter to continue..."
                         ;;
                     5)
@@ -74,6 +75,54 @@ while true; do
             echo "Installing Hydrogen..."
             bash -c "$(curl -fsSL https://www.hydrogen.lat/install)"
             read -p "Press Enter to continue..."
+            ;;
+        3)
+            while true; do
+                clear
+                echo "============================"
+                echo "     Script Options"
+                echo "============================"
+                echo
+                echo "1) Infinite Yield"
+                echo "2) Hydro Hub"
+                echo "0) Back"
+                echo
+                read -p "Choose an option: " scriptChoice
+
+                case $scriptChoice in
+                    1)
+                        clear
+                        echo "Infinite Yield Script:"
+                        echo "----------------------"
+                        echo "loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()"
+                        echo
+                        echo "Copy the above script and paste it into your Hydrogen workspace."
+                        read -p "Press Enter to continue..."
+                        ;;
+                    2)
+                        clear
+                        echo "Hydro Hub Script:"
+                        echo "-----------------"
+                        echo "--[["
+                        echo "Hydro({"
+                        echo "Features = \"Universal scripts & tools ⚙️\", \"multi game support 🎮\", \"Completely Free\", \"User-friendly UI 💫\", \"Built-in executor [Asynchronous], [Synchronous] & direct raw execution support (ex : using the raw link without loadstring, https://raw.githubusercontent.com/user/repo/main/script.lua)\""
+                        echo "})"
+                        echo "--]]"
+                        echo
+                        echo "loadstring(game:HttpGet(\"https://raw.githubusercontent.com/FRX397/Hydrohub/main/Hydro_hub\", true))()"
+                        echo
+                        echo "Copy the above script and paste it into your Hydrogen workspace."
+                        read -p "Press Enter to continue..."
+                        ;;
+                    0)
+                        break
+                        ;;
+                    *)
+                        echo "Invalid option."
+                        read -p "Press Enter to continue..."
+                        ;;
+                esac
+            done
             ;;
         0)
             echo "Adios"
