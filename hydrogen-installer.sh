@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# Hydrogen Helper erstellt von Flawless
-# Erstellt von Flawless – https://github.com/killxistcool
+# Hydrogen Helper erstellt von Flawless - https://github.com/killxistcool
 
 # Colors
 TITLE_BLUE='\033[1;36m'    # Fettes Cyan für die Titel
@@ -16,7 +15,7 @@ while true; do
     echo -e "${TITLE_BLUE}${BOLD}       by Flawless${RESET}"
     echo -e "${TITLE_BLUE}============================${RESET}"
     echo
-    echo -e "${BOLD}What are you looking for?${RESET}"
+    echo -e "${TITLE_BLUE}${BOLD}What are you looking for?${RESET}"
     echo
     echo -e "${OPTION_BLUE}1) Hydrogen Information${RESET}"
     echo -e "${OPTION_BLUE}2) Install Hydrogen${RESET}"
