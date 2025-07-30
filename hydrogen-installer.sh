@@ -65,7 +65,7 @@ case $choice in
         ;;
     2)
         echo "Installing Hydrogen..."
-        bash <(curl -sSL https://raw.githubusercontent.com/redivancee/HydrogenIssues/refs/heads/main/hydro-helper.command)
+        bash -c "$(curl -fsSL https://www.hydrogen.lat/install)"
         ;;
     0)
         echo "Adios"
