@@ -163,6 +163,7 @@ while true; do
             ;;
         0)
             echo "Adios"
+            osascript -e 'tell application "Terminal" to quit'
             exit 0
             ;;
         *)
