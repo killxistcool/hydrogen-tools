@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Hydrogen Helper made by Flawless
-# Created by Flawless - https://github.com/killxistcool
+# Hydrogen Helper erstellt von Flawless
+# Erstellt von Flawless – https://github.com/killxistcool
 
 # Colors
-TITLE_BLUE='\033[1;36m'   # Fettes Cyan für die Titel
-OPTION_BLUE='\033[0;96m'  # Helles Cyan für die Optionen wie z.b. "Hydrogen Information"
+TITLE_BLUE='\033[1;36m'    # Fettes Cyan für die Titel
+OPTION_BLUE='\033[0;96m'   # Helles Cyan für die opptionen wie z.b. "Hydrogen Information"
 BOLD='\033[1m'
 RESET='\033[0m'
 
@@ -18,12 +18,12 @@ while true; do
     echo
     echo -e "${BOLD}What are you looking for?${RESET}"
     echo
-    echo -e "${OPTION_BLUE}1)${RESET} Hydrogen Information"
-    echo -e "${OPTION_BLUE}2)${RESET} Install Hydrogen"
-    echo -e "${OPTION_BLUE}3)${RESET} Script Options"
-    echo -e "${OPTION_BLUE}4)${RESET} Key Options"
-    echo -e "${OPTION_BLUE}5)${RESET} Troubleshooting"
-    echo -e "${OPTION_BLUE}0)${RESET} Exit"
+    echo -e "${OPTION_BLUE}1) Hydrogen Information${RESET}"
+    echo -e "${OPTION_BLUE}2) Install Hydrogen${RESET}"
+    echo -e "${OPTION_BLUE}3) Script Options${RESET}"
+    echo -e "${OPTION_BLUE}4) Key Options${RESET}"
+    echo -e "${OPTION_BLUE}5) Troubleshooting${RESET}"
+    echo -e "${OPTION_BLUE}0) Exit${RESET}"
     echo
     read -p "Choose an option: " choice
 
@@ -35,12 +35,12 @@ while true; do
                 echo -e "${TITLE_BLUE}${BOLD}   Hydrogen Information${RESET}"
                 echo -e "${TITLE_BLUE}============================${RESET}"
                 echo
-                echo -e "${OPTION_BLUE}1)${RESET} FAQ"
-                echo -e "${OPTION_BLUE}2)${RESET} sUNC"
-                echo -e "${OPTION_BLUE}3)${RESET} Status"
-                echo -e "${OPTION_BLUE}4)${RESET} Key Prices"
-                echo -e "${OPTION_BLUE}5)${RESET} Key Tutorial"
-                echo -e "${OPTION_BLUE}0)${RESET} Back"
+                echo -e "${OPTION_BLUE}1) FAQ${RESET}"
+                echo -e "${OPTION_BLUE}2) sUNC${RESET}"
+                echo -e "${OPTION_BLUE}3) Status${RESET}"
+                echo -e "${OPTION_BLUE}4) Key Prices${RESET}"
+                echo -e "${OPTION_BLUE}5) Key Tutorial${RESET}"
+                echo -e "${OPTION_BLUE}0) Back${RESET}"
                 echo
                 read -p "Choose an option: " infoChoice
 
@@ -91,9 +91,9 @@ while true; do
                 echo -e "${TITLE_BLUE}${BOLD}     Script Options${RESET}"
                 echo -e "${TITLE_BLUE}============================${RESET}"
                 echo
-                echo -e "${OPTION_BLUE}1)${RESET} Infinite Yield"
-                echo -e "${OPTION_BLUE}2)${RESET} Hydro Hub"
-                echo -e "${OPTION_BLUE}0)${RESET} Back"
+                echo -e "${OPTION_BLUE}1) Infinite Yield${RESET}"
+                echo -e "${OPTION_BLUE}2) Hydro Hub${RESET}"
+                echo -e "${OPTION_BLUE}0) Back${RESET}"
                 echo
                 read -p "Choose an option: " scriptChoice
 
@@ -133,10 +133,10 @@ while true; do
                 echo -e "${TITLE_BLUE}${BOLD}      Key Options${RESET}"
                 echo -e "${TITLE_BLUE}============================${RESET}"
                 echo
-                echo -e "${OPTION_BLUE}1)${RESET} Get Free Key"
-                echo -e "${OPTION_BLUE}2)${RESET} Remove Key"
-                echo -e "${OPTION_BLUE}3)${RESET} Buy Adless"
-                echo -e "${OPTION_BLUE}0)${RESET} Back"
+                echo -e "${OPTION_BLUE}1) Get Free Key${RESET}"
+                echo -e "${OPTION_BLUE}2) Remove Key${RESET}"
+                echo -e "${OPTION_BLUE}3) Buy Adless${RESET}"
+                echo -e "${OPTION_BLUE}0) Back${RESET}"
                 echo
                 read -p "Choose an option: " keyChoice
 
@@ -145,7 +145,7 @@ while true; do
                         open "https://hydrogen.lat/unlock"
                         ;;
                     2)
-                        echo -e "${RED}WARNING:${RESET} Removing your key will not be irreversible."
+                        echo -e "${BOLD}WARNING:${RESET} Removing your key will not be irreversible."
                         echo "Your key will become unusable unless you get your HWID reset by xgladius."
                         read -p "Are you sure you want to remove your key? (y/n): " confirmRemove
                         if [[ "$confirmRemove" == "y" || "$confirmRemove" == "Y" ]]; then
@@ -175,10 +175,10 @@ while true; do
                 echo -e "${TITLE_BLUE}${BOLD}      Troubleshooting${RESET}"
                 echo -e "${TITLE_BLUE}============================${RESET}"
                 echo
-                echo -e "${OPTION_BLUE}1)${RESET} No HTTP server on ports 6969–7069"
-                echo -e "${OPTION_BLUE}2)${RESET} Permission denied (os error)"
-                echo -e "${OPTION_BLUE}3)${RESET} Error 403"
-                echo -e "${OPTION_BLUE}0)${RESET} Back"
+                echo -e "${OPTION_BLUE}1) No HTTP server on ports 6969–7069${RESET}"
+                echo -e "${OPTION_BLUE}2) Permission denied (os error)${RESET}"
+                echo -e "${OPTION_BLUE}3) Error 403${RESET}"
+                echo -e "${OPTION_BLUE}0) Back${RESET}"
                 echo
                 read -p "Choose an option: " troubleshootChoice
 
