@@ -37,8 +37,8 @@ case $choice in
                 open "https://hydrostuff.github.io/Hydrogen-Knowledgebase/"
                 ;;
             2)
-                echo "**Hydrogen is at 94% sUNC.**"
-                echo "Missing: **\`replicatesignal\`**, and **\`getcallbackvalue\`**"
+                echo "Hydrogen is at 94% sUNC."
+                echo "Missing: \replicatesignal\, and \getcallbackvalue\"
                 echo "Test link: https://r.sunc.su/iVvotxiPoV"
                 ;;
             3)
