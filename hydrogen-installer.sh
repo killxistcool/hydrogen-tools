@@ -330,7 +330,7 @@ while true; do
             echo
             color_echo "Welcome to Hydrogen Helper made by Flawless."
             color_echo "This unofficial tool simplifies managing Hydrogen on macOS."
-            color_echo "This is an unofficial tool."
+            color_echo "Special thanks to you, for using this tool."
             color_echo "Credits to xgladius for developing Hydrogen."
             echo
             color_echo "For additional assistance, visit:"
